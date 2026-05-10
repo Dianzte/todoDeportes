@@ -85,6 +85,7 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
     <!-- Botón Estadísticas -->
             <div class="fixed bottom-8 right-8 z-50">
@@ -94,4 +95,6 @@
                 </a>
             </div>
             
+=======
+>>>>>>> 049c4fdee275277917cabb445cf35326e6872a29
 </x-app-layout>
