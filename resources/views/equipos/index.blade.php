@@ -88,7 +88,7 @@
 
             <div class="fixed bottom-8 right-8 z-50">
                 <a href="{{ route('estadisticas') }}" 
-                   class="inline-flex items-center gap-3 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-black text-lg rounded-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-none active:translate-x-1 active:translate-y-1 transition-all duration-200 border-2 border-orange-600">
+                   class="inline-flex items-center  px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white font-black text-lg rounded-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-none active:translate-x-1 active:translate-y-1 transition-all duration-200 border-2 border-orange-600">
                     📊 VER GRÁFICO DE EQUIPOS
                 </a>
             </div>
