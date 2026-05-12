@@ -9,7 +9,6 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
                 
-                <!-- Botón para volver -->
                 <div class="mb-6">
                     <a href="{{ route('equipos.index') }}" 
                        class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700">
@@ -23,6 +22,27 @@
             </div>
         </div>
     </div>
+
+    <form action="{{ route('equipos.pdf') }}" method="POST" id="pdfForm">
+    @csrf
+    <input type="hidden" name="chart_base64" id="chart_base64">
+    
+    <x-primary-button type="button" onclick="exportWithChart()">
+        Exportar Reporte PDF
+    </x-primary-button>
+</form>
+
+<script>
+    function exportWithChart() {
+        const canvas = document.getElementById('graficoEquipos');
+        
+        const chartImage = canvas.toDataURL('image/png');
+        
+        document.getElementById('chart_base64').value = chartImage;
+        
+        document.getElementById('pdfForm').submit();
+    }
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>

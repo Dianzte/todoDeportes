@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Equipo;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class EquipoController extends Controller
 {
@@ -121,4 +122,13 @@ class EquipoController extends Controller
         return view('equipos.estadisticas', compact('nombresEquipos', 'cantidadJugadores'));
     }
    
+    public function exportarPdf(Request $request) 
+{
+$equipos = Equipo::withCount('jugadores')->get();
+    $graficoBase64 = $request->input('chart_base64'); // La imagen que enviamos desde el JS
+
+    $pdf = Pdf::loadView('equipos.pdf', compact('equipos', 'graficoBase64'))
+              ->setPaper('a4', 'portrait');
+
+    return $pdf->download('reporte-tododeportes.pdf');}
 }

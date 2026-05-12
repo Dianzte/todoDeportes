@@ -13,7 +13,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
         
     </div>
     <div class="p-6 text-gray-900">
@@ -22,7 +21,4 @@
         📊 Ver Gráfico de Equipos y Jugadores
     </a>
 </div>
-=======
-    </div>
->>>>>>> 049c4fdee275277917cabb445cf35326e6872a29
 </x-app-layout>

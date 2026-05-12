@@ -40,3 +40,5 @@ Route::get('/estadisticas', [EquipoController::class, 'estadisticas'])
      ->middleware('auth');
 
 require __DIR__ . '/auth.php';
+
+Route::post('/equipos/exportar-pdf', [EquipoController::class, 'exportarPDF'])->name('equipos.pdf');
