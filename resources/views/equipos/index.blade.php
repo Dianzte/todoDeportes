@@ -61,7 +61,7 @@
                                         <a href="{{ route('equipos.show', $equipo) }}" class="text-white bg-indigo-600 px-3 py-1 rounded hover:bg-white hover:text-indigo-600 transition-all uppercase text-[10px]">Plantilla</a>
 
                                         @if(auth()->id() === $equipo->user_id || auth()->user()->role === 'admin')
-                                        <a href="{{ route('equipos.edit', $equipo) }}" class="text-orange-400 hover:text-white transition-colors uppercase text-[10px] mt-1">Editar</a>
+                                        <a href="{{ route('equipos.edit', $equipo) }}" class="text-white-400 hover:text-white transition-colors uppercase text-[10px] mt-1">Editar</a>
 
                                         <form action="{{ route('equipos.destroy', $equipo) }}" method="POST" onsubmit="return confirm('¿Confirmar baja del equipo?');">
                                             @csrf

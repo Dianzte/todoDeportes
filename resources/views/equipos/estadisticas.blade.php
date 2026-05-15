@@ -55,8 +55,8 @@
                 datasets: [{
                     label: 'Cantidad de Jugadores',
                     data: @json($cantidadJugadores),
-                    backgroundColor: '#1e40af',
-                    borderColor: '#1e3a8a',
+                    backgroundColor: '#092fadff',
+                    borderColor: '#0d2e8aff',
                     borderWidth: 1
                 }]
             },

@@ -2,16 +2,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <style>
         body { background-color: #0f172a; color: white; font-family: sans-serif; }
-        .orange-line { border-top: 4px solid #f97316; margin-bottom: 20px; }
+        .orange-line { border-top: 4px solid #ff984fff; margin-bottom: 20px; }
         table { width: 100%; border-collapse: collapse; }
-        th { background: #1e293b; color: #f97316; text-transform: uppercase; padding: 10px; }
+        th { background: #1e293b; color: #ff984fff; text-transform: uppercase; padding: 10px; }
         td { border-bottom: 1px solid #334155; padding: 10px; }
         .chart-box { margin-top: 30px; text-align: center; }
     </style>
 </head>
 
 <div class="orange-line"></div>
-<h1>TODODEPORTES <span style="color: #f97316;">Reporte</span></h1>
+<h1>TODODEPORTES <span style="color: #ff842cff;">Reporte</span></h1>
 
 <table>
     <thead>
@@ -33,6 +33,6 @@
 </table>
 
 <div class="chart-box">
-    <h3 style="color: #f97316;">ANÁLISIS DE PLANTILLAS</h3>
+    <h3 style="color: #ff8731ff;">ANÁLISIS DE PLANTILLAS</h3>
     <img src="{{ $graficoBase64 }}" style="width: 100%;">
 </div>
